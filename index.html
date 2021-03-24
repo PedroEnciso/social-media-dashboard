@@ -38,21 +38,27 @@
   </head>
   <body class="bg-white">
     <div class="w-11/12 mx-auto pt-10">
-      <h1 class="">Social Media Dashboard</h1>
-      <p>Total Followers: 23,004</p>
-      <hr />
-      <div class="flex justify-between">
-        <p>Dark Mode</p>
+      <div class="sm:flex sm:justify-between sm:items-center">
         <div>
-          <input class="hidden" type="checkbox" />
-          <div class="w-9 h-5 flex items-center bg-gray-400 rounded-full p-1">
-            <div class="w-4 h-4 bg-white rounded-full shadow-md"></div>
+          <h1 class="">Social Media Dashboard</h1>
+          <p>Total Followers: 23,004</p>
+        </div>
+
+        <hr class="sm:hidden" />
+
+        <div class="flex justify-between">
+          <p>Dark Mode</p>
+          <div>
+            <input class="hidden" type="checkbox" />
+            <div class="w-9 h-5 flex items-center bg-gray-400 rounded-full p-1">
+              <div class="w-4 h-4 bg-white rounded-full shadow-md"></div>
+            </div>
           </div>
         </div>
       </div>
 
       <!--followers section-->
-      <section class="w-full grid grid-cols-1 gap-5 mt-10">
+      <section class="w-full grid grid-cols-1 gap-5 mt-10 sm:grid-cols-4">
         <!--facebook-->
         <div class="w-full flex flex-col items-center bg-gray-100">
           <div class="w-full h-1 bg-black"></div>
@@ -113,7 +119,9 @@
 
       <!--overview section-->
       <h2 class="mt-10">Overview - Today</h2>
-      <section class="w-full grid grid-cols-1 gap-4 mt-4 mb-10">
+      <section
+        class="w-full grid grid-cols-1 gap-4 mt-4 mb-10 sm:grid-cols-4 sm:grid-rows-2"
+      >
         <div class="w-full bg-gray-100">
           <div class="w-10/12 mx-auto flex items-center justify-between">
             <p>Page Views</p>

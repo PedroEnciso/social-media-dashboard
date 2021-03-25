@@ -25,11 +25,36 @@
       * {
         font-size: 14px;
         font-family: "Inter", sans-serif;
+        color: hsl(228, 12%, 44%);
       }
+
+      h1,
+      h3 {
+        color: hsl(230, 17%, 14%);
+      }
+
+      hr {
+        background: hsl(228, 12%, 44%);
+      }
+
+      .lime {
+        color: hsl(163, 72%, 41%);
+      }
+
+      .red {
+        color: hsl(356, 69%, 56%);
+      }
+
+      .letter-space {
+        letter-spacing: 5px;
+        font-size: 12px;
+      }
+
       .attribution {
         font-size: 11px;
         text-align: center;
       }
+
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
@@ -37,21 +62,23 @@
     <link rel="stylesheet" href="tailwind.css" />
   </head>
   <body class="bg-white">
-    <div class="w-9/12 mx-auto pt-10">
+    <div class="w-10/12 mx-auto pt-10 sm:w-9/12">
       <div class="sm:flex sm:justify-between sm:items-center">
         <div>
-          <h1 class="">Social Media Dashboard</h1>
-          <p>Total Followers: 23,004</p>
+          <h1 class="font-bold text-2xl">Social Media Dashboard</h1>
+          <p class="font-bold">Total Followers: 23,004</p>
         </div>
 
-        <hr class="sm:hidden" />
+        <hr class="sm:hidden my-5" />
 
-        <div class="flex justify-between">
-          <p>Dark Mode</p>
-          <div>
+        <div class="flex justify-between items-center">
+          <p class="font-bold">Dark Mode</p>
+          <div class="sm:ml-4">
             <input class="hidden" type="checkbox" />
-            <div class="w-9 h-5 flex items-center bg-gray-400 rounded-full p-1">
-              <div class="w-4 h-4 bg-white rounded-full shadow-md"></div>
+            <div
+              class="w-12 h-6 flex items-center bg-gray-400 rounded-full p-1"
+            >
+              <div class="w-5 h-5 bg-white rounded-full shadow-md"></div>
             </div>
           </div>
         </div>
@@ -60,61 +87,69 @@
       <!--followers section-->
       <section class="w-full grid grid-cols-1 gap-5 mt-10 sm:grid-cols-4">
         <!--facebook-->
-        <div class="w-full flex flex-col items-center bg-gray-100">
+        <div
+          class="w-full flex flex-col items-center bg-gray-100 rounded-lg overflow-hidden"
+        >
           <div class="w-full h-1 bg-blue-500"></div>
-          <div class="flex">
+          <div class="flex mt-6">
             <img src="images/icon-facebook.svg" alt="facebook" />
-            <p class="pl-3">@nathanf</p>
+            <p class="pl-3 font-bold">@nathanf</p>
           </div>
-          <p>1987</p>
-          <p>followers</p>
-          <div class="flex items-center">
+          <h3 class="text-6xl font-bold mt-6">1987</h3>
+          <p class="uppercase mt-1 letter-space">followers</p>
+          <div class="flex items-center my-6">
             <img src="images/icon-up.svg" alt="up arrow" />
-            <p class="pl-1">12 Today</p>
+            <p class="pl-1 lime">12 Today</p>
           </div>
         </div>
         <!--twitter-->
-        <div class="w-full flex flex-col items-center bg-gray-100">
+        <div
+          class="w-full flex flex-col items-center bg-gray-100 rounded-lg overflow-hidden"
+        >
           <div class="w-full h-1 bg-blue-400"></div>
-          <div class="flex">
+          <div class="flex mt-6">
             <img src="images/icon-twitter.svg" alt="twitter" />
-            <p class="pl-3">@nathanf</p>
+            <p class="pl-3 font-bold">@nathanf</p>
           </div>
-          <p>1044</p>
-          <p>followers</p>
-          <div class="flex items-center">
+          <h3 class="text-6xl font-bold mt-6">1044</h3>
+          <p class="uppercase mt-1 letter-space">followers</p>
+          <div class="flex items-center my-6">
             <img src="images/icon-up.svg" alt="up arrow" />
-            <p class="pl-1">99 Today</p>
+            <p class="pl-1 lime">99 Today</p>
           </div>
         </div>
         <!--instagram-->
-        <div class="w-full flex flex-col items-center bg-gray-100">
+        <div
+          class="w-full flex flex-col items-center bg-gray-100 rounded-lg overflow-hidden"
+        >
           <div
             class="w-full h-1 bg-gradient-to-r from-yellow-400 to-red-500"
           ></div>
-          <div class="flex">
+          <div class="flex mt-6">
             <img src="images/icon-instagram.svg" alt="instagram" />
-            <p class="pl-3">@realnathanf</p>
+            <p class="pl-3 font-bold">@realnathanf</p>
           </div>
-          <p>11k</p>
-          <p>followers</p>
-          <div class="flex items-center">
+          <h3 class="text-6xl font-bold mt-6">11k</h3>
+          <p class="uppercase mt-1 letter-space">followers</p>
+          <div class="flex items-center my-6">
             <img src="images/icon-up.svg" alt="up arrow" />
-            <p class="pl-1">1099 Today</p>
+            <p class="pl-1 lime">1099 Today</p>
           </div>
         </div>
         <!--youtube-->
-        <div class="w-full flex flex-col items-center bg-gray-100">
+        <div
+          class="w-full flex flex-col items-center bg-gray-100 rounded-lg overflow-hidden"
+        >
           <div class="w-full h-1 bg-red-800"></div>
-          <div class="flex">
+          <div class="flex mt-6">
             <img src="images/icon-youtube.svg" alt="youtube" />
-            <p class="pl-3">Nathan F.</p>
+            <p class="pl-3 font-bold">Nathan F.</p>
           </div>
-          <p>8239</p>
-          <p>subscribers</p>
-          <div class="flex items-center">
-            <img src="images/icon-down.svg" alt="up arrow" />
-            <p class="pl-1">144 Today</p>
+          <h3 class="text-6xl font-bold mt-6">8239</h3>
+          <p class="uppercase mt-1 letter-space">subscribers</p>
+          <div class="flex items-center my-6">
+            <img src="images/icon-down.svg" alt="down arrow" />
+            <p class="pl-1 red">144 Today</p>
           </div>
         </div>
       </section>

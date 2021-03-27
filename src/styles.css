@@ -8,6 +8,10 @@
   color: hsl(228, 12%, 44%);
 }
 
+html {
+  transition: all 0.2s;
+}
+
 h1,
 h3 {
   color: hsl(230, 17%, 14%);

@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: hsl(228, 12%, 44%);
+}
+
+h1,
+h3 {
+  color: hsl(230, 17%, 14%);
+}
+
+hr {
+  background: hsl(228, 12%, 44%);
+}
+
+.back-decor {
+  z-index: -1;
+}
+
+.lime {
+  color: hsl(163, 72%, 41%);
+}
+
+.red {
+  color: hsl(356, 69%, 56%);
+}
+
+.letter-space {
+  letter-spacing: 5px;
+  font-size: 12px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*toggle*/
+.toggle-dot {
+  position: relative;
+  transform: translateX(100%);
+  transition: all 0.2s ease-out;
+}
+
+#toggle:checked ~ label .toggle-dot {
+  transform: translateX(0%);
+}
